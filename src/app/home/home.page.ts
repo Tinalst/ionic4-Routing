@@ -17,7 +17,8 @@ export class HomePage {
       (num === 3) && this.router.navigate(['./action-sheet'], {queryParams: {id: 2}});
       (num === 4) && this.router.navigate(['./alter'], {queryParams: {id: 2}});
       (num === 5) && this.router.navigate(['./avatar'], {queryParams: {id: 2}});
-
+      (num === 6) && this.router.navigate(['./back-button'], {queryParams: {id: 2}});
+      (num === 7) && this.router.navigate(['./backdrop'], {queryParams: {id: 2}});
   }
 }
 

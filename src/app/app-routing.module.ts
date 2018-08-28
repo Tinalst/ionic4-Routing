@@ -9,6 +9,8 @@ const routes: Routes = [
   { path: 'action-sheet', loadChildren: './action-sheet/action-sheet.module#ActionSheetPageModule' },
   { path: 'alter', loadChildren: './alter/alter.module#AlterPageModule' },
   { path: 'avatar', loadChildren: './avatar/avatar.module#AvatarPageModule' },
+  { path: 'back-button', loadChildren: './back-button/back-button.module#BackButtonPageModule' },
+  { path: 'backdrop', loadChildren: './backdrop/backdrop.module#BackdropPageModule' },
 ];
 
 @NgModule({

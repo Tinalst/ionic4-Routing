@@ -1,0 +1,50 @@
+
+<ion-content padding>
+    <!-- Default back button -->
+
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button></ion-back-button>
+            </ion-buttons>
+        </ion-toolbar>
+
+    <!-- Back button with a default href -->
+
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="home"></ion-back-button>
+            </ion-buttons>
+        </ion-toolbar>
+
+
+    <!-- Back button with custom text and icon -->
+
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button
+                        [text]="buttonText"
+                        [icon]="buttonIcon">
+                </ion-back-button>
+            </ion-buttons>
+        </ion-toolbar>
+
+
+    <!-- Back button with no text and custom icon -->
+
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button text="" icon="add"></ion-back-button>
+            </ion-buttons>
+        </ion-toolbar>
+
+
+    <!-- Danger back button next to a menu button -->
+
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+                <ion-back-button color="danger"></ion-back-button>
+            </ion-buttons>
+        </ion-toolbar>
+
+</ion-content>
