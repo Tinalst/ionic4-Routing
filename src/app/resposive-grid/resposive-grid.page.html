@@ -1,0 +1,178 @@
+<!--<ion-header>-->
+    <!--<ion-toolbar color="primary">-->
+        <!--<ion-buttons slot="start">-->
+            <!--<ion-menu-button></ion-menu-button>-->
+        <!--</ion-buttons>-->
+
+        <!--<ion-title>Login</ion-title>-->
+    <!--</ion-toolbar>-->
+<!--</ion-header>-->
+
+<ion-content>
+    <ion-grid>
+        <ion-row responsive-sm>
+            <ion-col>
+                <ion-button  type="submit" expand="block">Login</ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button  color="light" expand="block">Signup</ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>等宽布局</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col>1.1</ion-col>
+            <ion-col>1.2</ion-col>
+            <ion-col>1.3</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>2.1</ion-col>
+            <ion-col>2.2</ion-col>
+            <ion-col>2.3</ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>指定某一列的宽度</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col>1.1</ion-col>
+            <ion-col size="8">1.2(size="8")</ion-col>
+            <ion-col>1.3</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>2.1</ion-col>
+            <ion-col [size]="6">2.2([size]="6")</ion-col>
+            <ion-col>2.3</ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>在均等分之后，如果内容所需宽度超过本身列宽度，其宽度自动填充适应内容，并且同级列会做相应的调整</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col>1.1</ion-col>
+            <ion-col [size]="auto">1.2([size]="auto")absdskdjskdjk</ion-col>
+            <ion-col>1.3</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>2.1</ion-col>
+            <ion-col>2.2</ion-col>
+            <ion-col>2.3</ion-col>
+        </ion-row>
+    </ion-grid>
+
+   <p>在最小屏的时候使得原本水平显示一行，变为折叠显示</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col [size]="12" size-sm>1.1</ion-col>
+            <ion-col [size]="12" size-sm>1.2</ion-col>
+            <ion-col [size]="12" size-sm>1.3</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col [size]="12" size-sm>2.1</ion-col>
+            <ion-col [size]="12" size-sm>2.2</ion-col>
+            <ion-col [size]="12" size-sm>2.3</ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>列偏移, 偏移后，当前行的列会根据偏移后的空间进行适应调整</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col [offset]="3">1.1</ion-col>
+            <ion-col>1.2</ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>根据屏幕的大小sm, xs, md等等</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col size-md="3">1.1</ion-col>
+            <ion-col size-md="3">1.2</ion-col>
+            <ion-col size-md="3">1.3</ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>改变列的顺序，向右或者向左</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col [size]="9" [push]="3">1.1([push]="3")向右</ion-col>
+            <ion-col [size]="3" [pull]="9">1.2（[pull]="9"）向左</ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>根据屏幕的大小，改变列的顺序,比如，当屏幕大小超过md的尺寸的时候，第一个col的size首先从2变为6然后向右偏移3个col的大小</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col [size]="2" size-md="6" push-md="3">1.1(size-md="6" push-md="3")</ion-col>
+            <ion-col [size]="6" size-md="2" pull-md="6">1.2(size-md="2" pull-md="6")</ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>垂直对齐：以flex布局的垂直对齐属性align-items 类似 ???????</p>
+    <ion-grid class="vertical-aligin">
+        <ion-row align-items-start>
+            <ion-col>align-items-start</ion-col>
+            <ion-col>align-items-start</ion-col>
+            <ion-col>
+                <p>align-items-start</p>
+                 <p>align-items-start</p>
+                 <p>align-items-start</p>
+            </ion-col>
+        </ion-row>
+        <ion-row align-items-center>
+            <ion-col>align-items-center</ion-col>
+            <ion-col>align-items-center</ion-col>
+            <ion-col>
+                <p>align-items-center</p>
+                <p>align-items-center</p>
+                <p>align-items-center</p>
+            </ion-col>
+        </ion-row>
+        <ion-row align-items-end>
+            <ion-col>align-items-end</ion-col>
+            <ion-col>align-items-end</ion-col>
+            <ion-col>
+                <p>align-items-end</p>
+                <p>align-items-end</p>
+                <p>align-items-end</p>  
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>设置单个列相对于行的垂直对齐方式，于flex相同</p>
+    <ion-grid>
+        <ion-row>
+            <ion-col align-self-start>1.1</ion-col>
+            <ion-col align-self-center>1.2</ion-col>
+            <ion-col align-self-end>
+               <p>3</p>
+               <p>3</p>
+               <p>3</p>
+               <p>3</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <p>设置水平直居中</p>
+    <ion-grid>
+        <ion-row justify-content-start>
+            <ion-col>justify-content-start</ion-col>
+            <ion-col>justify-content-start</ion-col>
+            <ion-col>
+                <p>justify-content-start</p>
+                <p>justify-content-start</p>
+                <p>justify-content-start</p>
+            </ion-col>
+        </ion-row>
+        <ion-row justify-content-center>
+            <ion-col>justify-content-center</ion-col>
+            <ion-col>justify-content-center</ion-col>
+            <ion-col>
+                 <p>justify-content-center</p>
+                 <p>justify-content-center</p>
+                 <p>justify-content-center</p>
+            </ion-col>
+        </ion-row>
+        <ion-row justify-content-end="">
+            <ion-col>justify-content-end</ion-col>
+            <ion-col>justify-content-end</ion-col>
+            <ion-col>
+                 <p>justify-content-end</p>
+                 <p>justify-content-end</p>
+                 <p>justify-content-end</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    
+</ion-content>

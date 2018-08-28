@@ -1,0 +1,17 @@
+.paddingtest ion-col {
+  border: #0ec254 1px solid; }
+  .paddingtest ion-col > div {
+    border: #32db64 1px solid; }
+
+.custom-padding ion-col {
+  padding: var(--content-padding, 30px);
+  border: #0ec254 1px solid; }
+  .custom-padding ion-col > div {
+    border: #32db64 1px solid; }
+
+.marginTest ion-col {
+  border: #0ec254 1px solid; }
+  .marginTest ion-col > div {
+    border: #32db64 1px solid; }
+
+/*# sourceMappingURL=text.page.css.map */

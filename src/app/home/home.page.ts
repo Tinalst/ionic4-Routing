@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(
+      private router: Router
+  ) {}
 
+  jumper = (num: number) => {
+      (num === 1) && this.router.navigate(['./resposive-grid'], {queryParams: {id: 1}});
+      (num === 2) && this.router.navigate(['./text'], {queryParams: {id: 2}});
+      (num === 3) && this.router.navigate(['./action-sheet'], {queryParams: {id: 2}});
+      (num === 4) && this.router.navigate(['./alter'], {queryParams: {id: 2}});
+      (num === 5) && this.router.navigate(['./avatar'], {queryParams: {id: 2}});
+
+  }
 }
+
