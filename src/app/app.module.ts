@@ -8,15 +8,21 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import {AngularDraggableModule} from 'angular2-draggable';
+
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+      AppComponent
+  ],
   entryComponents: [],
   imports: [
       BrowserModule,
       IonicModule.forRoot(),
       AppRoutingModule,
-      RouterModule
+      RouterModule,
+      AngularDraggableModule
   ],
   providers: [
     StatusBar,
