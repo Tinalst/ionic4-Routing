@@ -17,6 +17,14 @@ const routes: Routes = [
   { path: 'chip', loadChildren: './chip/chip.module#ChipPageModule' },
   { path: 'content', loadChildren: './content/content.module#ContentPageModule' },
   { path: 'fab', loadChildren: './fab/fab.module#FabPageModule' },
+  { path: 'lazyloadImg', loadChildren: './lazyload-img/lazyload-img.module#LazyloadImgPageModule' },
+  { path: 'infiniteScroll', loadChildren: './infinite-scroll/infinite-scroll.module#InfiniteScrollPageModule' },
+  { path: 'input', loadChildren: './input/input.module#InputPageModule' },
+  { path: 'item', loadChildren: './item/item.module#ItemPageModule' },
+  { path: 'itemdivider', loadChildren: './item-divider/item-divider.module#ItemDividerPageModule' },
+  { path: 'itemsliding', loadChildren: './item-sliding/item-sliding.module#ItemSlidingPageModule' },
+  { path: 'label', loadChildren: './label/label.module#LabelPageModule' },
+  { path: 'list', loadChildren: './list/list.module#ListPageModule' },
 ];
 
 @NgModule({

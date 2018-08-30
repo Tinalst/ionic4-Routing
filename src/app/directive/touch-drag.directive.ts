@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostListener, Input} from '@angular/core';
+import {Directive, ElementRef, HostBinding, HostListener, Input, Renderer2} from '@angular/core';
 import {templateJitUrl} from '@angular/compiler';
 
 @Directive({
@@ -15,7 +15,7 @@ export class TouchDragDirective {
     oWidth: any;
     oHeight: any;
 
-    constructor(private obj: ElementRef) {
+    constructor(private obj: ElementRef, private render: Renderer2) {
 
     }
 
@@ -58,6 +58,7 @@ export class TouchDragDirective {
 
         // 左侧
         if (this.obj.nativeElement.offsetLeft <= 0) {
+
             this.obj.nativeElement.style.left = 0 + 'px';
         }
 
@@ -76,7 +77,5 @@ export class TouchDragDirective {
             this.obj.nativeElement.style.top = this.pHeight - this.oHeight + 'px';
         }
     }
-
-
 
 }

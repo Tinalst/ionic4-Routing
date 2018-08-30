@@ -25,6 +25,15 @@ export class HomePage {
       (num === 11) && this.router.navigate(['./chip'], {queryParams: {id: 2}});
       (num === 12) && this.router.navigate(['./content'], {queryParams: {id: 2}});
       (num === 13) && this.router.navigate(['./fab'], {queryParams: {id: 2}});
+      (num === 14) && this.router.navigate(['./lazyloadImg'], {queryParams: {id: 2}});
+      (num === 15) && this.router.navigate(['./infiniteScroll'], {queryParams: {id: 2}});
+      (num === 16) && this.router.navigate(['./input'], {queryParams: {id: 2}});
+      (num === 17) && this.router.navigate(['./item'], {queryParams: {id: 2}});
+      (num === 18) && this.router.navigate(['./itemdivider'], {queryParams: {id: 2}});
+      (num === 19) && this.router.navigate(['./itemsliding'], {queryParams: {id: 2}});
+      (num === 20) && this.router.navigate(['./label'], {queryParams: {id: 2}});
+      (num === 21) && this.router.navigate(['./list'], {queryParams: {id: 2}});
+
 
   }
 }
