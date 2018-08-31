@@ -1,0 +1,9 @@
+app-loading .custom-class {
+  background: #e0b500; }
+
+ion-loading .custom-class .loading-wrapper {
+  background: #e0b500; }
+ion-loading .custom-class ion-spinner {
+  /*Spinner styles*/ }
+
+/*# sourceMappingURL=loading.page.css.map */

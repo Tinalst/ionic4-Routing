@@ -11,12 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import {AngularDraggableModule} from 'angular2-draggable';
 
 
-
 @NgModule({
   declarations: [
       AppComponent
   ],
-  entryComponents: [],
+  entryComponents: [
+  ],
   imports: [
       BrowserModule,
       IonicModule.forRoot(),

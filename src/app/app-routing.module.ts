@@ -25,6 +25,14 @@ const routes: Routes = [
   { path: 'itemsliding', loadChildren: './item-sliding/item-sliding.module#ItemSlidingPageModule' },
   { path: 'label', loadChildren: './label/label.module#LabelPageModule' },
   { path: 'list', loadChildren: './list/list.module#ListPageModule' },
+  { path: 'loading', loadChildren: './loading/loading.module#LoadingPageModule' },
+  { path: 'menu', loadChildren: './menu/menu.module#MenuPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
+  { path: 'nav', loadChildren: './nav/nav/nav.module#NavPageModule' },
+  { path: 'popover', loadChildren: './popover/popover.module#PopoverPageModule' },
+  { path: 'radio', loadChildren: './radio/radio.module#RadioPageModule' },
+  { path: 'range', loadChildren: './range/range.module#RangePageModule' },
+  { path: 'refresher', loadChildren: './refresher/refresher.module#RefresherPageModule' },
 ];
 
 @NgModule({

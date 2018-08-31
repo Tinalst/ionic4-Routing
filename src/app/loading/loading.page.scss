@@ -1,0 +1,13 @@
+app-loading {
+  .custom-class {
+    background: #e0b500;
+  }
+}
+ion-loading .custom-class {
+  .loading-wrapper {
+    background: #e0b500;
+  }
+  ion-spinner {
+    /*Spinner styles*/
+  }
+}
